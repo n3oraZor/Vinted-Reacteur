@@ -9,11 +9,10 @@ const User = require("../models/User");
 const cloudinary = require("cloudinary").v2;
 // Upload photo et configuration
 
-
 //crypting datas package
 const uid2 = require("uid2");
 const SHA256 = require("crypto-js/sha256");
-const encBase64 = require("crypto-js/enc-Base64");
+const encBase64 = require("crypto-js/enc-base64");
 
 //Création d'un compte avec les paramètres en body
 router.post("/signup", async (req, res) => {
